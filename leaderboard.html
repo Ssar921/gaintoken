@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Token Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="leaderboard-c">
+        <header>
+            <img src="assets/logo.png" alt="logo">
+            <span>
+                <a href="index.html">Main Site →</a>
+                <a href="dashboard.html">Dashboard →</a>
+            </span>
+        </header>
+    
+        <div class="leaderboard">
+            <div class="leaderboard-top">
+                <h1>GAIN LEADERBOARD</h1>
+                <span>
+                    <input type="text" placeholder="Search">
+                    <button>Download</button>
+                </span>
+            </div>
+            <span>
+                <small>
+                    Rewards are based on your Eth investment, both buys and sells. The more Eth you invest and the less you make back through sales, the higher your reward tier. The minimum Eth spend to be elidable for rewards is 0.1 eth.<br>
+                    Example 1, a buyer of 0.2 Eth on launch day will receive the same level of gold rewards as a buyer of 0.2 Eth in month 3."<br>
+                    Example 2, a buyer spends 1 Eth and receives 5x bonus rewards. Then as the token price appreciated, they sell 0.5 Eth of tokens. The cumulative Eth spend is 0.5 Eth so they move to the x3 bonus reward tier.
+                    <br>
+                </small>
+            </span>
+            <br>
+            <table class="leaderboard-table">
+                <tr>
+                    <th>#</th>
+                    <th>Address</th>
+                    <th>Investment Balance (Ethereum)</th>
+                    <th>Reward Tier</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>gain1.eth</td>
+                    <td>10</td>
+                    <td class="leaderboard-tier t-24"><p>24 Pure Gold</p></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>gain2.eth</td>
+                    <td>7</td>
+                    <td class="leaderboard-tier t-22"><p>22 Karat</p></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>gain1.eth</td>
+                    <td>3</td>
+                    <td class="leaderboard-tier t-20"><p>20 Karat</p></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>gain1.eth</td>
+                    <td>1.5</td>
+                    <td class="leaderboard-tier t-18"><p>18 Karat</p></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>gain1.eth</td>
+                    <td>0.75</td>
+                    <td class="leaderboard-tier t-14"><p>14 Karat</p></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>gain1.eth</td>
+                    <td>0.37</td>
+                    <td class="leaderboard-tier t-12"><p>12 Karat</p></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>gain1.eth</td>
+                    <td>0.18</td>
+                    <td class="leaderboard-tier t-10"><p>10 Karat</p></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="leaderboard.js"></script>
+
+</body>
+</html>

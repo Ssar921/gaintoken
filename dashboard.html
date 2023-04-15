@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Token Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="menu-btn">≡</div>
+        <div class="menu-dropdown">
+            <div class="menu">
+                <span>
+                    <h1>Dashboard</h1>
+                    <a href="#" class="active">
+                        <img src="assets/mail.png" alt="">
+                        <p>Dashboard</p>
+                    </a>
+                </span>
+    
+                <span>
+                    <h1>Swap</h1>
+                    <a href="#">
+                        <img src="assets/swap.png" alt="">
+                        <p>Swap</p>
+                    </a>
+                </span>
+    
+                <span>
+                    <h1>Leaderboard</h1>
+                    <a href="leaderboard.html">
+                        <img src="assets/account.png" alt="">
+                        <p>Leaderboard</p>
+                    </a>
+                </span>
+    
+                <span>
+                    <h1>GAIN Landing Page</h1>
+                    <a href="index.html">
+                        <img src="assets/globe.png" alt="">
+                        <p>Gain Token</p>
+                    </a>
+                </span>
+    
+                <span>
+                    <h1>Chart & Docs</h1>
+                    <a href="#">
+                        <img src="assets/chart.png" alt="Chart">
+                        <p>Chart</p>
+                    </a>
+                    <a href="#">
+                        <img src="assets/docs.png" alt="Whitepaper">
+                        <p>Whitepaper</p>
+                    </a>
+                    <a href="#">
+                        <img src="assets/contract.png" alt="Contract">
+                        <p>Contract</p>
+                    </a>
+                    <a href="#">
+                        <img src="assets/medium.png" alt="Medium">
+                        <p>Medium Articles</p>
+                    </a>
+                </span>
+    
+                <span>
+                    <h1>Socials</h1>
+                    <a href="#">
+                        <img src="assets/telegram.png" alt="Telegram">
+                        <p>Telegram</p>
+                    </a>
+                    <a href="#">
+                        <img src="assets/twitter.png" alt="Twitter">
+                        <p>Twitter</p>
+                    </a>
+                    <a href="#">
+                        <img src="assets/yt.png" alt="Youtube">
+                        <p>Youtube</p>
+                    </a>
+                </span>
+    
+            </div>
+        </div>
+
+        <div class="info-container">
+            <div class="db-header">
+                <img src="assets/main-bg2.png" alt="logo">
+                <span>
+                    <p><b>Welcome</b></p>
+                    <p>Your dashboard provides you with all the information you need on your token holding, your Gold rewards information (including what rewards level you are on, and your gold value). When you are ready, please connect your wallet, review your dashboard and feel free to claim your rewards any time.
+                    Please see our whitepaper for full information on how to earn rewards</p>
+                </span>
+            </div>
+
+            <a href="#" class="eth-info eth-wallet">
+                ≻ Connect Wallet ≺
+            </a>
+
+            <div class="eth-info">
+                <h3>GAIN Token Balance</h3>
+                <p id="balance"></p>
+            </div>
+        
+            <div class="eth-info">
+                <h3>Token Value</h3>
+                <p id="balanceHolding"></p>
+            </div>
+            
+            <div class="eth-info">
+                <h3>Eth Transaction Balance</h3>
+                <p id="ethDeposited"></p>
+            </div>
+    
+            <div class="eth-info">
+                <h3>Reward Bonus</h3>
+                <p id="ethTier"></p>
+            </div>
+    
+            <div class="eth-info">
+                <h3>Total Gold Earned</h3>
+                <p id="reward">--</p>
+            </div>
+    
+            <div class="eth-info">
+                <h3>Available to Claim</h3>
+                <p id="rewardWorth">--</p>
+                <a href="#" class="eth-claim">Claim Reward Now</a>
+            </div>
+    
+            <div class="eth-info">
+                <h3>Previously Claimed</h3>
+                <p id="rewardRealized">--</p>
+            </div>
+    
+            <div class="table-container">
+                <h3>Your Transaction History</h3>
+                <table class="transaction-table">
+                    <tr>
+                        <th>Hash</th>
+                        <th>Timestamp</th>
+                        <th>Action</th>
+                        <th>Price ($)</th>
+                        <th>Amount</th>
+                        <th>Value ($)</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
+    <script>
+        $(".menu-btn").click((function(e){e.stopPropagation(),$(".menu-dropdown").toggle()})),$(document).click((function(){$(".menu-dropdown").hide()}));
+    </script>
+
+</body>
+</html>
